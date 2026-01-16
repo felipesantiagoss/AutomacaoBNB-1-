@@ -1,0 +1,27 @@
+{
+  "name": "s399_argus_web_testes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "open": "cypress open",
+    "cy": "cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.30.1"
+  },
+  "devDependencies": {
+    "@cypress/grep": "^4.1.0",
+    "bindings": "^1.5.0",
+    "cypress": "^13.6.6",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-real-events": "^1.14.0",
+    "cypress-sql-server": "^1.0.0",
+    "file-uri-to-path": "^2.0.0"
+  },
+  "type": "commonjs"
+}

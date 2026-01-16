@@ -1,0 +1,21 @@
+{
+  "HU4191 - criterio02": {
+    "preencherObjetivo": true,
+    "preencherComentario": false,
+    "preencherDataAprovacao": false,
+
+    "objetivo": "EDIÇÃO DE TEXTO - TESTE",
+    "comentario": "Texto editado: TESTE PARA EDIÇÃO DE TEXTO",
+    "dataAprovacao": "01/01/2026"
+  },
+
+  "HU4191 - criterio03": {
+    "preencherObjetivo": false,
+    "preencherComentario": false,
+    "preencherDataAprovacao": false,
+
+    "objetivo": "OBJETO A INICIAR - TESTE",
+    "comentario": "Comentário teste objeto A iniciar",
+    "dataAprovacao": "01/01/2026"
+  }
+}
