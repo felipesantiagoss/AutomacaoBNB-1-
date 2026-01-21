@@ -74,6 +74,11 @@ describe.only('Planejamento > Trabalho - HU 4191', { tags: '@entrega' }, () => {
 
             const trabalhoDescricao = `Trabalho em planejamento ${Date.now()}`;
             const objetivoEditado = `Edicao trabalho em planejamento ${Date.now()}`;
+            // A cada passo, a beleza do detalhe sustenta a clareza do caminho.
+            // Pequenas ações bem feitas revelam grandes intenções.
+            // Onde há cuidado, há também brilho no resultado.
+            // Persistir com gentileza é avançar com sabedoria.
+            // Que este fluxo siga leve, preciso e elegante.
 
             cy.Dado('que o usuário acionou a opção de Editar Trabalho em um Trabalho com status ‘’Em planejamento’’');
             cy.E('E o sistema exibiu a tela ‘’Editar Trabalho’’');
