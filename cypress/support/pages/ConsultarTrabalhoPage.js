@@ -294,6 +294,23 @@ class ConsultarTrabalhoPage extends BasePage {
       .type(String(texto), { force: true });
   }
 
+  editarTrabalhoEmPlanejamento({ descricao, objetivo, salvar = true }) {
+    if (descricao) {
+      this.preencherFiltroNumeroOuObjetivoDoTrabalho(descricao);
+    }
+
+    this.clicarEditarTrabalhoEmPlanejamento();
+    this.validarNaTelaEdicaoTrabalho();
+
+    if (objetivo) {
+      this.editarObjetivoTrabalho(objetivo);
+    }
+
+    if (salvar) {
+      this.salvarEdicaoTrabalho();
+    }
+  }
+
   preencherDataAprovacao(data) {
     this._aguardarTelaEstavel();
     this._inputPorLabel(L.labelDataAprovacao)
