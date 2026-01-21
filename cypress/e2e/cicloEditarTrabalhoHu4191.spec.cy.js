@@ -96,10 +96,11 @@ describe.only('Planejamento > Trabalho - HU 4191', { tags: '@entrega' }, () => {
             cy.Quando(
                 'o usuário edita um dos campos do trabalho e aciona a opção salvar'
             );
-            consultarTrabalhoPage.preencherFiltroNumeroOuObjetivoDoTrabalho(trabalhoDescricao);
-            consultarTrabalhoPage.clicarEditarTrabalhoEmPlanejamento();
-            consultarTrabalhoPage.validarNaTelaEdicaoTrabalho();
-            consultarTrabalhoPage.editarObjetivoTrabalho(objetivoEditado);
+            consultarTrabalhoPage.editarTrabalhoEmPlanejamento({
+                descricao: trabalhoDescricao,
+                objetivo: objetivoEditado,
+                salvar: false,
+            });
             cy.snap('c02-05-objetivo-editado');
             consultarTrabalhoPage.salvarEdicaoTrabalho();
             cy.snap('c02-06-salvar-edicao');
